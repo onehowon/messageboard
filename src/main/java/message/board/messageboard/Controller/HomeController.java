@@ -1,6 +1,7 @@
 package message.board.messageboard.Controller;
 
 import jakarta.servlet.http.HttpSession;
+import message.board.messageboard.entity.member.Member;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;

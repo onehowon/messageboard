@@ -4,10 +4,13 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpSession;
 import message.board.messageboard.Dto.LoginDto;
 import message.board.messageboard.entity.member.Member;
+import message.board.messageboard.service.MemberService;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class MemberController {
     @GetMapping("/login")
